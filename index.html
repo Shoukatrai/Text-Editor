@@ -4,9 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+
+    <!-- <button onclick="callF()">Click</button> -->
+    <div class="container">
+        <div class="box1">
+            <input type="number" value="16" min="16" onchange="fontSizeChange(this)">
+            <i class="fa-solid fa-b" onclick="makeBold()"></i>
+            <i class="fa-solid fa-italic" onclick="makeItalic()"></i>
+            <i class="fa-solid fa-underline" onclick="underLineText()"></i>
+            <i class="fa-solid fa-align-right" onclick="alignRight()"></i>
+            <i class="fa-solid fa-align-center" onclick="alignCenter()"></i>
+            <i class="fa-solid fa-align-left" onclick="alignLeft()"></i>
+            <i class="fa-solid fa-align-justify" onclick="alignJustify()"></i>
+            <input id="color" type="color" oninput="changeColor(this)">
+            <button class="btn" onclick="resetChanges()">Reset</button>
+        </div>
+
+        <div class="box2">
+            <textarea id="message" name=" textarea " placeholder="Enter text here..."></textarea>  
+        </div>
+    </div>
+
+<script src="app.js"></script>
 </body>
 </html>
