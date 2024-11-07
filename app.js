@@ -28,6 +28,17 @@ function underLineText(){
 }
 
 
+function smalText(){
+    var message = document.getElementById("message");   
+    message.style.textTransform = "lowercase" 
+}
+
+
+function bigText(){
+    var message = document.getElementById("message");   
+    message.style.textTransform = "uppercase" 
+}
+
 function alignLeft(){
     var message = document.getElementById("message");   
     message.style.textAlign= "left";
@@ -56,4 +67,8 @@ function resetChanges(){
     message.style.fontStyle= "normal";
     message.style.color= "black";   
     message.style.textDecoration= "none";
+    message.style.textTransform = "none" 
+    message.style.textAlign= "left";
+
+
 }
